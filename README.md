@@ -1,5 +1,6 @@
 # Соответствия кодов ОКПД и ОКПД2
-=================================
+--------------------------------
+
 1) **ОКПД => ОКПД2**
 ```js
   const okpdTranslater = require('../src/okpd_to_okpd2.js')
@@ -36,3 +37,4 @@
   console.log(okpdTranslater.has('30.99.10.000')) //true
   console.log(okpdTranslater.has('99.99.99.999')) //false
 ```
+--------------------------------
