@@ -1,6 +1,7 @@
-# okpd_to_okpd2
-Соответствия кодов ОКПД и ОКПД2
-1) ОКПД => ОКПД2
+# Соответствия кодов ОКПД и ОКПД2
+=================================
+1) **ОКПД => ОКПД2**
+```js
   const okpdTranslater = require('../src/okpd_to_okpd2.js')
 
   console.log(okpdTranslater.get('65.77.30')) // 26.30.40.110
@@ -10,8 +11,10 @@
   console.log(okpdTranslater.has('65.77.30')) // true
   console.log(okpdTranslater.has('98.96.94')) // true
   console.log(okpdTranslater.has('98.96.99')) // false
-  
-2) ОКПД2 => ОКПД
+```
+--------------------------------
+2) **ОКПД2 => ОКПД**
+```js
   const okpdTranslater = require('../src/okpd2_to_okpd.js')
 
   console.log(okpdTranslater.get('30.99.10.000')) // [ '31.43.50',
@@ -32,3 +35,4 @@
 
   console.log(okpdTranslater.has('30.99.10.000')) //true
   console.log(okpdTranslater.has('99.99.99.999')) //false
+```
